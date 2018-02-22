@@ -1,0 +1,15 @@
+{
+	"name": "localdev-light",
+	"version": "0.0.1",
+	"description": "Super-lightweight local development server",
+	"main": "index.js",
+	"author": "Mikael Vesavuori",
+	"license": "MIT",
+	"devDependencies": {
+		"browser-sync": "^2.23.6"
+	},
+	"scripts": {
+		"start":
+			"browser-sync start --port 3000 --https --cors --server --index src/index.html --files src/**/*.*"
+	}
+}
